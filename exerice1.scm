@@ -10,7 +10,7 @@
 (define (square_sum x y) (+ (square x) (square y)))
 (define (two_big x y)
   (cond (< x y) y)
-        (else x)))
+        (else x))
 (define (two_square_sum a b c)
   (cond ((< a b) (square_sum b (two_big a c)))
         ((< a c) (square_sum a c))
