@@ -1,5 +1,5 @@
 # Exercise1.1
- 10 12 8 3 6 3 4 19 #f 4 16 6 ?
+# 10 12 8 3 6 3 4 19 #f 4 16 6 ?
 
 # Exercise1.2
 (/ (+ 5 (/ 1 2) (- 2 (- 3 (+ 6 (/ 1 3)))))
@@ -17,18 +17,18 @@
         (else (square_sum a (two_big b c)))))
 
 # Exercise1.4
-If "b" is bigger than zero, "a" will plus b, otherwise minus b.
+# If "b" is bigger than zero, "a" will plus b, otherwise minus b.
 
 # Exercise1.5
-Application Order:
+# Application Order:
 
-Normal Order:
+# Normal Order:
 
 # Exercise1.6
-So far, I think it will work normally as usual.
+# So far, I think it will work normally as usual.
 
 # Exercise1.7
-Yes, it does.
+# Yes, it does.
 
 # Exercise1.8
 (define (good-enough? guess guess-past)
@@ -40,20 +40,18 @@ Yes, it does.
              (else (cube-iter (improve guess x) x))))
 
 # Exercise1.9
-Resursive? I'm not sure.
-Iterative
+# Resursive? I'm not sure.
+# Iterative
 
 # Exercise1.10
-2^10
-2^16
-2^16
+# 2^10 2^16 2^16
 
 # Exercise1.10
-recursive:
+# recursive:
 (define (f n)
         (cond (< n 3) n)
             (else (+ (f (- n 1)) (* (f (- n 2)) 2) (* (f (- n 3)) 3))))
-iterative:
+# iterative:
 (define (f n) (f-iter n 0))
 (define (f-iter n sum)
         (cond (< n 3) n+sum)
